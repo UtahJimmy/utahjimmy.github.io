@@ -3,8 +3,8 @@
 title: Jimmy Moore
 description: PhD candidate | University of Utah | Data visualization
 
-baseurl: utahjimmy.github.io #name of GitHub repository
-url: utahjimmy.github.io #custom url to be used instead of GitHub repository
+baseurl: '/pages/utahjimmy.github.io' #name of GitHub repository
+url:  #custom url to be used instead of GitHub repository
 email: #
 
 
