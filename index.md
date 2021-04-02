@@ -2,13 +2,13 @@
 layout: about
 permalink: /
 profile:
-  align: right
+  align: left
   image: profile.png
 published: true
 ---
 
-[Gradfolio](https://github.com/jitinnair1/gradfolio){:target="_blank"} is a responsive, dark-mode ready Jekyll theme designed keeping academia in mind. The easiest way to install the theme is to fork it using GitHub. Check the README file for [instructions](https://github.com/jitinnair1/gradfolio#installation){:target="_blank"}.
+I am a PhD student at the [Visualization Design Lab](https://vdl.sci.utah.edu/) where I work with [Miriah Meyer](https://www.cs.utah.edu/~miriah/) and [Jason Wiese](https://www.cs.utah.edu/~wiese/).  My research fouses on people's workflows, and designing solutions that make working with data more productive and enjoyable.   I consider myself a hybrid qualitative researcher with a technical background, and have developed visualization tools for asthmatics, high school students, and actual rocket scientists. 
 
-If you want to use this space to write your biography here, edit the `index.md` file. You can put a picture in, too. Rename your picture to `profile.png` and put it in the `assets/images/` folder.
+Outside of school, I am interested music, electronics, and music electronics.  I have a small synth collection and eurorack habit, with the bank statements to prove it.
 
-The social-icons footer can be used to link profiles from GitHub, OrcID and ReasearchGate aprart form the usual Twitter, LinkedIn and Facebook. You can add your user ID in the `_config.yml` file to link your accounts.
+Want to collaborate?  Send me an e-mail!
