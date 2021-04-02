@@ -5,7 +5,7 @@ description: PhD candidate | University of Utah | Data visualization
 
 baseurl: / #name of GitHub repository
 url:  #custom url to be used instead of GitHub repository
-email: #
+email: 
 
 
 highlighter: rouge
@@ -17,10 +17,9 @@ permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
 # Social media links in footer
-facebook: "#"
-twitter: "#"
+facebook: "https://www.sciencedirect.com/science/article/abs/pii/S0747563217304685"
 linkedin: "#"
-github: "#"
+github: "https://github.com/UtahJimmy"
 researchgate: "#"
 orcid: "#"
 
