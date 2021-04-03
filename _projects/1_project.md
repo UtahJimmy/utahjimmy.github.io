@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Short Project
-description: description of the short project which is long enough
+title: Working with asthmatics
+description: Want effective data collection? Text them.
 ---
 
-Example taken from [here](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html){:target="_blank"}.
+This is a quick summary of a previous research into how asthmatics would interact with a [wireless air quality system](https://vdl.sci.utah.edu/publications/2018_imwut_maav/){:target="_blank"}.
 
-H1 Header
+Air Quality?  Like Outside?
 ============
 
 Paragraphs are separated by a blank line.
