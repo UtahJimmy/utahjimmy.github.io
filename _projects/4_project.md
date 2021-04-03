@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Project 4
-description: another project
+title: Eurorack Case
+description: The high cost of saving money
 ---
 
 Example taken from [here](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html){:target="_blank"}.
 
-H1 Header
+Case Design
 ============
 
 Paragraphs are separated by a blank line.
