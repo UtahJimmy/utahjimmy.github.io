@@ -1,12 +1,10 @@
 ---
 layout: post
-title: A longer Project Title
-description: short project description
+title: Building speakers
+description: Or: Just as nice for twice the price
 ---
 
-Example taken from [here](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html){:target="_blank"}.
-
-H1 Header
+Psh, $250?
 ============
 
 Paragraphs are separated by a blank line.
