@@ -1,26 +1,16 @@
 ---
 layout: post
-title: Home They Brought Her Warrior Dead 
+title: Running Doom on OSX 
 ---
 
-Home they brought her warrior dead:  
-She nor swooned, nor uttered cry:  
-All her maidens, watching, said,  
-'She must weep or she will die.'  
+**Note:** This may have been fixed, but if not, this worked for me: 
 
-Then they praised him, soft and low,  
-Called him worthy to be loved,  
-Truest friend and noblest foe;  
-Yet she neither spoke nor moved.  
+MacOS has this "feature" where it sandboxes applications if things aren't done in a very particular way. It's called app translocation. For most applications it doesn't affect their behavior or your ability to use them. Because of the way our applications interact it causes serious issues.
+If you are comfortable with typing commands into the terminal you can "untranslocate" the application.
 
-Stole a maiden from her place,  
-Lightly to the warrior stept,  
-Took the face-cloth from the face;  
-Yet she neither moved nor wept.  
+1. Open your terminal and `cd /Applications/Odamex`
+2. Run the command `xattr odalaunch.app`
+3. Run this command `xattr -d com.apple.quarantine odalaunch.app` if needed.  Do the same for odamex.app and odasrv.
+4. Then delete the file `~/Library/Preferences/odalaunch\ Preferences`
 
-Rose a nurse of ninety years,  
-Set his child upon her knee—  
-Like summer tempest came her tears—  
-'Sweet my child, I live for thee.'  
-
-[by Alfred Tennyson](https://en.wikisource.org/wiki/Home_They_Brought_Her_Warrior_Dead)
+If you do that and you have your wads in the Odamex directory, should be able to start odalaunch and hit the yellow odamex button.
