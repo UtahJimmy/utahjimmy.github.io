@@ -1,6 +1,6 @@
 ---
-layout:post
-title: Image dithering
+layout: post
+title: "Old-school image dithering"
 ---
 
 A friend and I were talking about the old-school dithering effects of gameboys and apple II's, and I fell down a rabbit hole of spec sheets and image processing. 
