@@ -5,6 +5,8 @@ title: Running Doom on OSX
 
 **Note:** This may have been fixed, but if not, this worked for me: 
 
+Requires: [Odamex](https://odamex.net/) (and doom)
+
 MacOS has this "feature" where it sandboxes applications if things aren't done in a very particular way. It's called app translocation. For most applications it doesn't affect their behavior or your ability to use them. Because of the way our applications interact it causes serious issues.
 If you are comfortable with typing commands into the terminal you can "untranslocate" the application.
 
