@@ -18,7 +18,7 @@ paginate_path: /blog/page:num/
 
 # Social media links in footer
 facebook: "https://www.sciencedirect.com/science/article/abs/pii/S0747563217304685"
-linkedin: "#"
+linkedin: "https://www.linkedin.com/in/jimmy-moore-3230272a/"
 github: "UtahJimmy"
 #researchgate: "#"
 #orcid: "#"
