@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building speakers
-description: Or: Just as nice for twice the price
+description: Just as nice for twice the price
 ---
 
 Psh, $250?
