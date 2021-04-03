@@ -8,11 +8,11 @@ Here are some links to read up on some of the details behind how those nostalgic
 
 [The GameBoy Camera](http://web.csulb.edu/~wmartinz/rssc/content/MS_77.html)
 
-[The camera sensor spec sheet](https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/f2012/qs44_twc55/qs44_twc55/datasheets/MITSUB_image_sensor.pdf) (see pages 9 and 14 for 
+[The camera sensor spec sheet](https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/f2012/qs44_twc55/qs44_twc55/datasheets/MITSUB_image_sensor.pdf) (see pages 9 and 14 for the kernel and weights)
 
 And some background on [edge-detection and laplacians](https://html.alldatasheet.com/html-pdf/146598/MITSUBISHI/M64282FP/6064/10/M64282FP.html) for good measure
 
-The modern re-creation:
+**The modern re-creation**
 
 Github Gist for converting PNGs (will not work on jpegs!): [link](https://gist.github.com/s3krit/39725ba2f4ca9e6a09d01ea6863516c7)
 
