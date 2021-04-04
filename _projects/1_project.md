@@ -17,13 +17,28 @@ Detecting air quality -- which boils down to measuring the concentrations of [sm
 
 The System
 ============
+
+{:refdef: style="text-align: center;"}
+![header](/assets/images/projects/maav/IMG_9950.png)
+{: refdef}
+
 We hacked some [off-the-shelf Dylos air quality sensors](http://www.dylosproducts.com/ornodcproair.html) to add local datalogging and wireless transmission capabilities.  The software architecture behind this was *very* non-trivial and [received it's own write-up](https://span.ece.utah.edu/pub/EpiFi.pdf) for a sensors conference.
+
+
+
+{:refdef: style="text-align: center;"}
+![header](/assets/images/projects/maav/IMG_20170221_123704.jpg)
+{: refdef}
 
 We bought and modified about 20 of these senors and arranged to deploy them in the homes of six asthmatic families.  Each family would get three sensors to  place wherever they liked.  We let these run for about a month to collect some baseline data, then followed up with a tablet interface so people could interactively view and annotate their data, along with a Google Home for making voice annotations.
 
 
 The Interface
 ======
+
+{:refdef: style="text-align: center;"}
+![header](/assets/images/projects/maav/interface.png)
+{: refdef}
 
 
 Data Analysis
