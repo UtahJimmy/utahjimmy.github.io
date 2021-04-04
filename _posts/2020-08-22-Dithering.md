@@ -4,7 +4,7 @@ title: "Old-school image dithering"
 ---
 
 {:refdef: style="text-align: center;"}
-![header](/assets/2020-08-22-Dithering/header.png)
+![header](/assets/2020-08-22.jpeg)
 {: refdef}
 A friend and I were talking about the old-school dithering effects of gameboys and apple II's, and I fell down a rabbit hole of spec sheets and image processing. 
 Here are some links to read up on some of the details behind how those nostalgic image artefacts came to be, and how to re-create it.
