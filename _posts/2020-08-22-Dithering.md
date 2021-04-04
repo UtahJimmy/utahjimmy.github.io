@@ -17,9 +17,9 @@ And some background on [edge-detection and laplacians](https://html.alldatasheet
 
 ## The modern re-creation 
 
-Github Gist for converting PNGs (will not work on jpegs!): [link](https://gist.github.com/s3krit/39725ba2f4ca9e6a09d01ea6863516c7)
+[Github Gist](https://gist.github.com/s3krit/39725ba2f4ca9e6a09d01ea6863516c7) for converting PNGs (will not work on jpegs!)
 
-copy the script at the github link, make sure you have execution permission `($chmod u+x gbcam.sh)`, then run it via: `./gbcam.sh <picname.png>`
+Copy the script at the github link, make sure you have execution permission `($chmod u+x gbcam.sh)`, then run it via: `./gbcam.sh <picname.png>`
 
 
-[This article](https://surma.dev/things/ditherpunk/) does a deep dive into some modern implementations and has a bunch of great info in general
+[This article](https://surma.dev/things/ditherpunk/) does a deep dive into some modern artistic dithering implementations, plus a bunch of great info in general.
