@@ -9,158 +9,57 @@ This is a quick summary of a previous research into how asthmatics would interac
 Air Quality?  Like Outside?
 ============
 
-Paragraphs are separated by a blank line.
+Mention Air quality to people and they tacitly assume something related to the outdoors.  But a lot of what we do can impact the air quality indoors, as well.  There's the usual stuff you might expect:  cooking, cleaning, etc.  But also some things you would *not* expect:  making the bed, vacuuming, running your dryer.
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
-
-  * this one
-  * that one
-  * the other one
-
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
-
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
-
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+As something that's mostly (hopefully!) invisible, it's easy to ignore.  Air quality, however, is higly dymanic and hyper-localized.  You don't really notice until you can detect it, and people typically haven't been able to detect it from a available, affordable, and lack of easy-to-use systems.  This was the motivation behind our project in 2017, and the subject of [some research](https://vdl.sci.utah.edu/publications/2018_imwut_maav/) I presented at UbiComp 2018 in Singapore.  
 
 
-H2 Header
-------------
+The System
+============
+We hacked some [off-the-shelf Dylos air quality sensors](http://www.dylosproducts.com/ornodcproair.html) to add local datalogging and wireless transmission capabilities.  This, by the way, was pretty non-trivial and [received it's own write-up](https://span.ece.utah.edu/pub/EpiFi.pdf) for a sensors conference. 
 
-Here's a numbered list:
-
- 1. first item
- 2. second item
- 3. third item
-
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
-
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
-
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
-
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
-}
-~~~
-
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
-
-~~~python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print(i)
-~~~
+We bought and modified about 20 of these senors, and arranged to deploy them in the homes of six asthmatic families.  Each family would get three sensors that they could put anywhere they liked.  We let them run for about a month to collect some baseline data, then followed up with a tablet interface so people could interactively view and annotate their data, along with a Google Home for making voice annotations.
 
 
+The Interface
+======
 
-### An h3 header ###
 
-Now a nested list:
+Data Analysis
+========
 
- 1. First, get these ingredients:
 
-      * carrots
-      * celery
-      * lentils
+Interviewing
+=========
 
- 2. Boil some water.
 
- 3. Dump everything in the pot and follow
-    this algorithm:
+The Results
+=======
 
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
+* Having multiple monitors lets you make comparisons
+* The ability to annotate your data improves the over-all user-experience and sense of engagement
+* The interactive interface w/ data annotations let people explore their data
+* People used this system for a long time!  Texting was very popular!
 
-    Do not bump wooden spoon or it will fall.
+Recommendations
+========
 
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
+## People want to do more than "compare two sensor streams"
 
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
+Data logging systems could benefit from some more sophisticated practices
 
-[^1]: Some footnote text.
 
-Tables can look like this:
+## text messages are a good way to collect data from people
 
-Name           Size  Material      Color
-------------- -----  ------------  ------------
-All Business      9  leather       brown
-Roundabout       10  hemp canvas   natural
-Cinderella       11  glass         transparent
 
-Table: Shoes sizes, materials, and colors.
+## People's personal knowledge and usage patterns change over time
 
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
+It would be nice to have flexible systems that could track people's experiential growth and offer new or different functionalities depending one people's skills, goals, knowledge, etc.
 
---------  -----------------------
-Keyword   Text
---------  -----------------------
-red       Sunsets, apples, and
-          other red or reddish
-          things.
 
-green     Leaves, grass, frogs
-          and other things it's
-          not easy being.
---------  -----------------------
+Reflections
+=======
 
-A horizontal rule follows.
 
-***
+Looking back on this project....
 
-Here's a definition list:
-
-apples
-  : Good for making applesauce.
-
-oranges
-  : Citrus!
-
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term and  its definition to spread things out more.)
-
-Here's a "line block" (note how whitespace is honored):
-
-| Line one
-|   Line too
-| Line tree
-
-and images can be specified like so:
-
-![example image](example-image.jpg "An exemplary image")
-
-Inline math equation: $\omega = d\phi / dt$. Display
-math should get its own line like so:
-
-$$I = \int \rho R^{2} dV$$
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
