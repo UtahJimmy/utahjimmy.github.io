@@ -3,6 +3,9 @@ layout: post
 title: "Old-school image dithering"
 ---
 
+{:refdef: style="text-align: center;"}
+![header](/assets/2020-08-22-Dithering/header.png)
+{: refdef}
 A friend and I were talking about the old-school dithering effects of gameboys and apple II's, and I fell down a rabbit hole of spec sheets and image processing. 
 Here are some links to read up on some of the details behind how those nostalgic image artefacts came to be, and how to re-create it.
 
@@ -12,7 +15,7 @@ Here are some links to read up on some of the details behind how those nostalgic
 
 And some background on [edge-detection and laplacians](https://html.alldatasheet.com/html-pdf/146598/MITSUBISHI/M64282FP/6064/10/M64282FP.html) for good measure
 
-**The modern re-creation**
+## The modern re-creation 
 
 Github Gist for converting PNGs (will not work on jpegs!): [link](https://gist.github.com/s3krit/39725ba2f4ca9e6a09d01ea6863516c7)
 
