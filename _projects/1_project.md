@@ -40,9 +40,26 @@ The Interface
 ![header](/assets/images/projects/maav/interface.png)
 {: refdef}
 
+This was written in [D3.js](https://d3js.org/) and is a modified [Focus+Context block](https://observablehq.com/@d3/focus-context) with some [programmatic control](https://d19jftygre6gh0.cloudfront.net/micahstubbs/3cda05ca68cba260cb81) of the brush widths to match user-selected zoom levels, on the left.  This was skinned to look like Grafana people really liked it!  The red triangles indicate the presence of user-provided annotations to help contxtualized the data (more on that later).  The interface was intentionally stripped-down and kept simple because: (1) We didn't want there to be a high barrier-to-entry, and (2) we weren't sure what people might want to do with the system or their data, so we weren't about to go bounding into designing something blind.  This design served its purpose as a simple data review interface, and was good to get something in people's hands so that we could get some feedback (and observations) on how they used it.
 
-Spike Detection & User Alerts
+Data Processing, Spike Detection & User Alerts
 ========
+
+These deployments ran for a while (up to a year), and collected a *lot* of data.  This was challenging for fluidly displaying data on the cheapie Amazon fire tablets we used, as well as maintaining some visual fidelity of our minute-by-minute measurements from each sensor datastream.
+
+#### The overplotting is real
+
+The chart portion of our interface had about 400 pixels of horizonal real-estate.  Pushed to the limit, that's 400 datapoints (or 6.66 hours) before you run into overplotting issues.  Not a problem for the 3 or 6 hour view modes, but anything more needed some help.  
+
+Enter the 'Largest Triangle, Three Buckets' algorithm (demo [here](https://www.base.is/flot/)) fom [Sveinn Steinarsson's](https://github.com/sveinn-steinarsson) master's thesis: ["Downsampling Time Series for Visual Representation]((https://skemman.is/bitstream/1946/15343/3/SS_MSthesis.pdf).  This really is a great piece of work and exactly what we needed to maintain some visual fidelity of people's data, especially given the highly jagged and dynamic nature of air quality measurements.  Simply using a windowed aggergation approach would have smoothed out those dynamics, which was a big no-no for us.
+
+
+#### Detecting and alerting spikes
+
+(TBD)
+We used [Twillio](https://www.twilio.com/) and a variant of the [Smoothed Z-Score algorithm](https://stackoverflow.com/questions/22583391/peak-signal-detection-in-realtime-timeseries-data/22640362#22640362) to detect the presence of spikes as they occured so we could apply some "just-in-time interventions" to alert users of an air quality 'event' in their homes, and have them text us what they thought the cause to be.  This served multiple purposes in our study, but mostly to collect a self-annotated dataset, and keep participants engaged with their own deployment.
+
+
 
 
 Interviewing
