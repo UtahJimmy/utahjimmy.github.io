@@ -41,7 +41,7 @@ The Interface
 {: refdef}
 
 
-Data Analysis
+Spike Detection & User Alerts
 ========
 
 
@@ -60,15 +60,15 @@ The Results
 Recommendations
 ========
 
-## People want to do more than "compare two sensor streams"
+#### People want to do more than "compare two sensor streams"
 
 Data logging systems could benefit from some more sophisticated practices
 
 
-## text messages are a good way to collect data from people
+#### text messages are a good way to collect data from people
 
 
-## People's personal knowledge and usage patterns change over time
+#### People's personal knowledge and usage patterns change over time
 
 It would be nice to have flexible systems that could track people's experiential growth and offer new or different functionalities depending one people's skills, goals, knowledge, etc.
 
