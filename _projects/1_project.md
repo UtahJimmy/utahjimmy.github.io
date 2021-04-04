@@ -49,9 +49,18 @@ These deployments ran for a while (up to a year), and collected a *lot* of data.
 
 #### The overplotting is real
 
-The chart portion of our interface had about 400 pixels of horizonal real-estate.  Pushed to the limit, that's 400 datapoints (or 6.66 hours) before you run into overplotting issues.  Not a problem for the 3 or 6 hour view modes, but anything more needed some help.  
+{:refdef: style="text-align: center;"}
+![header](/assets/images/projects/maav/overplot.gif)
+{: refdef}
+(from: ["Too Big Data: Coping with Overplotting"](https://www.infragistics.com/community/blogs/b/tim_brock/posts/too-big-data-coping-with-overplotting))
 
-Enter the 'Largest Triangle, Three Buckets' algorithm (demo [here](https://www.base.is/flot/)) fom [Sveinn Steinarsson's](https://github.com/sveinn-steinarsson) master's thesis: ["Downsampling Time Series for Visual Representation]((https://skemman.is/bitstream/1946/15343/3/SS_MSthesis.pdf).  This really is a great piece of work and exactly what we needed to maintain some visual fidelity of people's data, especially given the highly jagged and dynamic nature of air quality measurements.  Simply using a windowed aggergation approach would have smoothed out those dynamics, which was a big no-no for us.
+
+The chart portion of our interface had about 400 pixels of horizonal real-estate.  Utilized fully, it's possible to display 400 datapoints.   Because our system logged data every minute, this only allows you to show at most 6.66 hours before you run into [overplotting issues](https://www.infragistics.com/community/blogs/b/tim_brock/posts/too-big-data-coping-with-overplotting).  Not a problem for our 3 or 6 hour view modes, but anything more needed some help.  
+
+Enter the 'Largest Triangle, Three Buckets' algorithm (demo [here](https://www.base.is/flot/)) fom [Sveinn Steinarsson's](https://github.com/sveinn-steinarsson) master's thesis: ["Downsampling Time Series for Visual Representation]((https://skemman.is/bitstream/1946/15343/3/SS_MSthesis.pdf).  Inspired by cartographic methods for preserving coastline features on maps, this wonderful algorithm allowed us to downsample our data into a visually similar reproduction of arbitrary time ranges.  You need to convert 50,000 datapoints into a visually-equivalent 1000 point plot?  This does it.  A great piece of work and exactly what we needed to maintain fluid interactivity and visual fidelity of people's jagged and dynamic air quality measurements.  Simply using a windowed aggergation approach would have smoothed out those dynamics, which was a big no-no for us.
+
+
+
 
 
 #### Detecting and alerting spikes
