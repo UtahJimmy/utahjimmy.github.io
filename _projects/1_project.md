@@ -65,43 +65,82 @@ Enter the 'Largest Triangle, Three Buckets' algorithm (demo [here](https://www.b
 
 #### Detecting and alerting spikes
 
-(TBD)
-We used [Twillio](https://www.twilio.com/) and a variant of the [Smoothed Z-Score algorithm](https://stackoverflow.com/questions/22583391/peak-signal-detection-in-realtime-timeseries-data/22640362#22640362) to detect the presence of spikes as they occured so we could apply some "just-in-time interventions" to alert users of an air quality 'event' in their homes, and have them text us what they thought the cause to be.  This served multiple purposes in our study, but mostly to collect a self-annotated dataset, and keep participants engaged with their own deployment.
+
+We used  a variant of the [Smoothed Z-Score algorithm](https://stackoverflow.com/questions/22583391/peak-signal-detection-in-realtime-timeseries-data/22640362#22640362) to detect the presence of spikes for each air quality sensor's data streams.  We used these triggers to fire off some "just-in-time intervention"-style text messages (via [Twillio](https://www.twilio.com/)) to alert users of an air quality 'event' in their homes, and have them text us what they thought the cause to be.  This served multiple purposes in our study, but mostly to collect a self-annotated dataset, and keep participants engaged with their own deployment.
 
 
 
 
 Interviewing
 =========
+We interviewed our participants multiple times throughout their deployments to capture how their experience with the system and knowledge of air quality changed over time.  These were [semi-structured interviews](https://en.wikipedia.org/wiki/Semi-structured_interview), and proceeded from a set of questions, but with enough latitude to discuss and explore interesting feedback as we encountered it 
+
+1. Pre-deployment interivews: This was mostly meeting people to explain the study, and capture some baseline knowledge and demographic information about our particiapnts and their overall knowledge about air quality, and things they felt to be important.
+2. Deployment interviews: These intereviews happened roughly 1 month later (once we had collected enough air quality data), and were part demonstration of our system, how to use the interface, and how to make annotations with text and google home.  We also asked how people imagined using it and other personal-priotiy style questions
+3. Post-deployment interviews:  Sometime later, we followed up with another round of interviews to get feedback on people's experience with using the system. This was a mix of what they liked, did not like, what they learned, etc.  
+
+
+
+We wrote up our paper and submitted it, but reviewers (rightfully) asked why so few people engaged in the interviews.  Surely if these were "household" deployments, shouldn't more people be involved?  Well, we tried to encourage people but no one other than the primary particiapnts seemed interested.  However, it was worth looking into why, so we ran an additional round of "engagement" interviews:
+
+5. Engagement interviews:  Each deployment received two interviews:  one with hte primary particiapnt, and one with "everyone else in the home".  All to determine what were the factors that motivated or influenced the interviewee's level of engagement.  Spoiler alert:  it's a lot to do with personal impact.  If you aren't affected, you're less likely to care. 
+
 
 
 The Results
 =======
 
-* Having multiple monitors lets you make comparisons
-* The ability to annotate your data improves the over-all user-experience and sense of engagement
-* The interactive interface w/ data annotations let people explore their data
-* People used this system for a long time!  Texting was very popular!
+We report on four findings in the paper.  Stated very briefly:
+
+#### Having multiple sensors lets you make comparisons
+
+Having sensors throughout your home lets you see how localized air quality can be, and how activities in one area of the house can affect the others.  
+
+
+#### The ability to annotate your data improves the over-all user-experience and sense of engagement
+It's easy to forget what you had for breakfast, and even easier to forget what a squiggle on a screen might have meant 2 days ago.  Making annotations improves data legibility, memorability, and user-engagement with a system deployment.
+
+
+#### The interactive interface w/ data annotations let people explore their data
+
+People liked looking back over their data to review it.  The annotations made that possible!
+
+#### People used this system for a long time!  Texting was very popular!
+
+In a field where most user-studies are conducted anywhere from a single afternoon, to a few weeks, having such a long-term deployment was valuable to see how people used their systems in the limit.  We were happy to see people maintained a very high engagement rate (over 80%), a year into the study, and that most people gravitated toward making annotations primarly through texting.  Everyone like getting messages, and they were easy enough to respond to.
+
+
+
 
 Recommendations
 ========
 
 #### People want to do more than "compare two sensor streams"
 
-Data logging systems could benefit from some more sophisticated practices
+Data logging systems could benefit from some more sophisticated practices.  Fitbit, etc. give you your data as a linear timeseries graph.  that's not how people think of things and in stead, comparing on conditions would be nice.
 
 
 #### text messages are a good way to collect data from people
 
+People's continued engagement with their air quality systems was due in large part by how effective our text messaging system was. Simple, light-weight, and low-overhead.  Some even came to treat the text message as its own proxy for air quality.  If we're texting them, then something must be up.
+
 
 #### People's personal knowledge and usage patterns change over time
 
-It would be nice to have flexible systems that could track people's experiential growth and offer new or different functionalities depending one people's skills, goals, knowledge, etc.
+Because experience levels and preferences changed over time, it would be nice to understand some best practices for designing flexible systems that grow with people's needs to offer different functionalities depending on skills, goals, knowledge, etc.
 
 
 Reflections
 =======
 
 
-Looking back on this project....
+1. Don't roll your own data collection backend or architecture.  It is a tar pit of edge cases and unexpected behaviors.
+2. Google Home will be used for playing music and making jokes.  Very little data will come from it.
+3. If texting people, it's helpful to let people set their own rules and preferences for when they want to be messaged.  This would have aleviated some frustrations, as well helped up to collect more data.  Lesson learned.
+
+
+Recommended Reading
+===========
+
+Tolmie 2016 - ["This has to be the cats"](https://dl.acm.org/doi/pdf/10.1145/2818048.2819992?casa_token=aewOHqdokS8AAAAA:2AKNUMrrSOjUpIwvdzKuKa5nWj4gd-E7v2ROJq3MkC1K22IVK-WXbNgsngdHcpxNVaa6hTDONQQt) --- A great read on how "personal" personal data can be, and how much it relies on the specific knowledge of lives and routines in order to meaningfully interpret.
 
