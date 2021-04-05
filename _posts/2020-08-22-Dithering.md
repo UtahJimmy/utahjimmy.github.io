@@ -17,9 +17,16 @@ And some background on [edge-detection and laplacians](https://html.alldatasheet
 
 ## The modern re-creation 
 
+{:refdef: style="text-align: center;"}
+![header](/assets/images/posts/2020-08-22-Dithering/brule.png)
+{: refdef}
+
 [Github Gist](https://gist.github.com/s3krit/39725ba2f4ca9e6a09d01ea6863516c7) for converting PNGs (will not work on jpegs!)
 
 Copy the script at the github link, make sure you have execution permission `($chmod u+x gbcam.sh)`, then run it via: `./gbcam.sh <picname.png>`
 
+{:refdef: style="text-align: center;"}
+![header](/assets/images/posts/2020-08-22-Dithering/matt.png)
+{: refdef}
 
 [This article](https://surma.dev/things/ditherpunk/) does a deep dive into some modern artistic dithering implementations, plus a bunch of great info in general.
