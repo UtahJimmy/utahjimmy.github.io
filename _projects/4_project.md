@@ -41,17 +41,24 @@ Sourcing rack rail is harder than it should be, and expensive.  Mouser had the b
 
 ## Power Supplies
 
+{:refdef: style="text-align: center;"}
+![header](http://sci.utah.edu/~jimmy/website/eurorack/l1.jpg)
+{: refdef}
 
+In the spirit of over-engineering absolutely everything, I opted to go with a linear power supply.  I think I found L-1 recommended on MW or similar, and decided it would be fun to build on my own.  I bought the kit, but was pretty disappointed with the provided components.  A lot of no-name capacitors and the power distribution boards had a missing trace, so I had to jumper some of the grounds.   In the end everything powered on fine and worked!
 
 {:refdef: style="text-align: center;"}
 ![header](http://sci.utah.edu/~jimmy/website/eurorack/psu.jpg)
 {: refdef}
 
 
-## Results
+I also opted to replace the power jack with something a bit more skookum.  Whatever the L1 shipped with felt pretty cheap and I wasn't about to fry myself (or, god forbid, the modular).
+
+
+In the end, the already pricey linear supply cost me an additional ~$80 in additional components to have something that could withstand the rigors of sitting on my desk.
 
 {:refdef: style="text-align: center;"}
-![header](/http://sci.utah.edu/~jimmy/website/eurorack/case.jpg)
+![header](http://sci.utah.edu/~jimmy/website/eurorack/case.jpg)
 {: refdef}
 
 
