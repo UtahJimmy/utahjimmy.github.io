@@ -24,6 +24,6 @@ Check out my [photo log](https://imgur.com/a/ynK2r) that roughly documents the p
 ![header](http://www.sci.utah.edu/~jimmy/website/speakers/after.jpg)
 {: refdef}
 
-It was a great project and delivered on all fronts.  In my pursuit of building a beautiful and great-sounding pair of speakers, I succeeded in making no progress on my research throughout the entire build process, and spent more than double the cost of buying the, KEFs outright.
+It was a great project and delivered on all fronts.  In my pursuit of building a beautiful and great-sounding pair of speakers, I succeeded in making no progress on my research throughout the entire build process and spent more than double the cost of buying the KEFs outright.
 
 And then I ended up buying a separate [pair of speakers](https://jblpro.com/products/lsr305) for my bedroom, anyway.
