@@ -40,7 +40,9 @@ Not bad for an afternoon.  Though the selection of appropriately sized rack rail
 
 ## Components
 
-Sourcing rack rail is harder than it should be, and expensive.  Mouser had the best prices, but 
+Sourcing rack rail is harder than it should be, and expensive.  Digikey had the best prices for the [TS209 vector rail](https://www.digikey.com/en/products/detail/vector-electronics/TS209/341218) (only $10/ea back in 2018), but it was still a bit of a head scratcher to figure out what kind of rail to get, and from where. Also, why was it easy to get 104HP rail, but only [84HP threaded insert](https://www.digikey.com/en/products/detail/schroff/34561384/4210056)!  I wish I would have bought extra and filled in the gaps, but didn't have the tools (or money, patience) for cutting the inserts and figured the floating nuts would be a decent compromise.  They suck.
+
+[Erthenvar](https://erthenvar.myshopify.com/) (now-defunct) came in handy for the mounting ears.
 
 ## Power Supplies
 
@@ -48,14 +50,14 @@ Sourcing rack rail is harder than it should be, and expensive.  Mouser had the b
 ![header](http://sci.utah.edu/~jimmy/website/eurorack/l1.jpg)
 {: refdef}
 
-In the spirit of over-engineering absolutely everything, I opted to go with a linear power supply.  I think I found L-1 recommended on MW or similar, and decided it would be fun to build on my own.  I bought the kit, but was pretty disappointed with the provided components.  A lot of no-name capacitors and the power distribution boards had a missing trace, so I had to jumper some of the grounds.   In the end everything powered on fine and worked!
+In the spirit of over-engineering absolutely everything, I opted to go with a linear power supply.  I found [L-1](http://l-1.su/Power.html) recommended on [MW](https://www.muffwiggler.com/forum/viewtopic.php?t=128163) and decided it would be fun to build on my own from a kit.  On receipt, I was pretty disappointed with the non-name component quality, and the power distribution boards had a missing trace, so I had to jumper some of the grounds.  I bought a bunch of replacement caps, thicker guage wire, and better heatsinks to increase chances for success.  In the end everything powered on fine and worked!
 
 {:refdef: style="text-align: center;"}
 ![header](http://sci.utah.edu/~jimmy/website/eurorack/psu.jpg)
 {: refdef}
 
 
-I also opted to replace the power jack with something a bit more skookum.  Whatever the L1 shipped with felt pretty cheap and I wasn't about to fry myself (or, god forbid, the modular).
+I also opted to replace the IEC receptacle with something [a bit more skookum](https://www.mouser.com/ProductDetail/631-FN9280-4-06).  Whatever the L1 shipped with felt pretty cheap and I wasn't about to fry myself (or, god forbid, the modular).
 
 
 In the end, the already pricey linear supply cost me an additional ~$80 in additional components to have something that could withstand the rigors of sitting on my desk.
