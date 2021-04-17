@@ -26,11 +26,11 @@ The most cost-effective solution at the time seemed to be the TipTop Mantis case
 By this time I learned that the university had a maker space for wood and metal working.  seeing as a case is just some wood slapped togetehr, I figured I could cobble something together from scraps:
 
 {:refdef: style="text-align: center;"}
-![header](http://sci.utah.edu/~jimmy/website/eurorack/build1.png)
+![header](http://sci.utah.edu/~jimmy/website/eurorack/build1.jpg)
 {: refdef}
 
 {:refdef: style="text-align: center;"}
-![header](http://sci.utah.edu/~jimmy/website/eurorack/build2.png)
+![header](http://sci.utah.edu/~jimmy/website/eurorack/build2.jpg)
 {: refdef}
 
 Not bad for an afternoon.  Though the selection of appropriately sized rack rail and spacers added to hte cost, I didn't trust myself enough to freehand things, so that added to the overall expense. (plus the rubber feet).
@@ -44,14 +44,14 @@ Sourcing rack rail is harder than it should be, and expensive.  Mouser had the b
 
 
 {:refdef: style="text-align: center;"}
-![header](http://sci.utah.edu/~jimmy/website/eurorack/psu.png)
+![header](http://sci.utah.edu/~jimmy/website/eurorack/psu.jpg)
 {: refdef}
 
 
 ## Results
 
 {:refdef: style="text-align: center;"}
-![header](/http://sci.utah.edu/~jimmy/website/eurorack/case.png)
+![header](/http://sci.utah.edu/~jimmy/website/eurorack/case.jpg)
 {: refdef}
 
 
