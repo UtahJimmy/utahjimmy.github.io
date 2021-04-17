@@ -8,6 +8,9 @@ description: The high cost of saving money
 Case Design
 ============
 
+{:refdef: style="text-align: center;"}
+![header](http://sci.utah.edu/~jimmy/website/eurorack/mantis.png)
+{: refdef}
 ## Market research
 
 The previous year's speaker building emboldened me to spend even more money and tackle a new project.  This was probably c. 2018, when eurorack was on the upswing in terms of its mainstream popularity.  I had cracked the seal with a Bass Station ii and MS-20 mini earlier in the year and was looking to dip my toes into hte modular waters as a way of extending my functionality.  
