@@ -66,4 +66,4 @@ In the end, the already pricey linear supply cost me an additional ~$80 in addit
 ![header](http://sci.utah.edu/~jimmy/website/eurorack/case.jpg)
 {: refdef}
 
-
+The case is now 2/3rds full, and fast on its way to becomming the most underwhelming $4k Moog Grandmother clone.
