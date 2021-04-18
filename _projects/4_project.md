@@ -22,11 +22,11 @@ Once more, I figured I could build something myself.
 
 ## I'm sure I could do that
 
-The most cost-effective solution at the time seemed to be the TipTop Mantis case.  at $300, it packed 2 104HP rows, with ample power to fill it.  However, I wasn't sure that 208HP would be enough... and I felt like building something again, so I figured I could save some money doing it on my own.  Notice a theme?
+The most cost-effective solution at the time seemed to be the TipTop Mantis case.  At $300, it packed 2 104HP rows, with ample power to fill it.  However, I wasn't sure that 208HP would be enough... and I felt like building something again, so I figured I could save some money doing it on my own.  Notice a theme?
 
 ## More Woodworking
 
-By this time I learned that the university had a maker space for wood and metal working.  seeing as a case is just some wood slapped togetehr, I figured I could cobble something together from scraps:
+By this time I learned that the university had a maker space for wood and metal working.  I figured I could cobble something together from plywood scraps:
 
 {:refdef: style="text-align: center;"}
 ![header](http://sci.utah.edu/~jimmy/website/eurorack/build1.jpg)
@@ -36,13 +36,13 @@ By this time I learned that the university had a maker space for wood and metal 
 ![header](http://sci.utah.edu/~jimmy/website/eurorack/build2.jpg)
 {: refdef}
 
-Not bad for an afternoon.  Though the selection of appropriately sized rack rail and spacers added to hte cost, I didn't trust myself enough to freehand things, so that added to the overall expense. (plus the rubber feet).
+Not bad for an afternoon.  
 
 ## Components
 
 Sourcing rack rail is harder than it should be, and expensive.  Digikey had the best prices for the [TS209 vector rail](https://www.digikey.com/en/products/detail/vector-electronics/TS209/341218) (only $10/ea back in 2018), but it was still a bit of a head scratcher to figure out what kind of rail to get, and from where. Also, why was it easy to get 104HP rail, but only [84HP threaded insert](https://www.digikey.com/en/products/detail/schroff/34561384/4210056)!  I wish I would have bought extra and filled in the gaps, but didn't have the tools (or money, patience) for cutting the inserts and figured the floating nuts would be a decent compromise.  They suck.
 
-[Erthenvar](https://erthenvar.myshopify.com/) (now-defunct) came in handy for the mounting ears.
+[Erthenvar](https://erthenvar.myshopify.com/) (now-defunct) came in handy for rail sides.
 
 ## Power Supplies
 
@@ -50,7 +50,7 @@ Sourcing rack rail is harder than it should be, and expensive.  Digikey had the 
 ![header](http://sci.utah.edu/~jimmy/website/eurorack/l1.jpg)
 {: refdef}
 
-In the spirit of over-engineering absolutely everything, I opted to go with a linear power supply.  I found [L-1](http://l-1.su/Power.html) recommended on [MW](https://www.muffwiggler.com/forum/viewtopic.php?t=128163) and decided it would be fun to build on my own from a kit.  On receipt, I was pretty disappointed with the non-name component quality, and the power distribution boards had a missing trace, so I had to jumper some of the grounds.  I bought a bunch of replacement caps, thicker guage wire, and better heatsinks to increase chances for success.  In the end everything powered on fine and worked!
+In the spirit of over-engineering everything, I opted to go with a linear power supply.  I found [L-1](http://l-1.su/Power.html) recommended on [MW](https://www.muffwiggler.com/forum/viewtopic.php?t=128163) and decided it would be fun to build on my own from a kit.  On receipt, I was pretty disappointed with the no-name components, undersized thermal fuse and heatsinks, and the fact that the power distribution boards had a missing trace.  I needed to jumper some of the grounds, buy a bunch of replacement caps, thicker guage wire, and better heatsinks to increase chances for success.  In the end everything powered on fine and worked, but I'd have been better off buying a Condor power supply or something.
 
 {:refdef: style="text-align: center;"}
 ![header](http://sci.utah.edu/~jimmy/website/eurorack/psu.jpg)
