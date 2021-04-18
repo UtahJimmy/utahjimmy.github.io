@@ -27,7 +27,7 @@ highlighter: rouge
 markdown: kramdown
 
 # Tracker
-analytics:
+analytics: 'G-C4P31XS0XY'
 
 #optimization -> compress.html
 compress_html:
