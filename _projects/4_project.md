@@ -13,9 +13,9 @@ Case Design
 {: refdef}
 ## Market research
 
-The previous year's speaker building emboldened me to spend even more money and tackle a new project.  This was probably c. 2018, when eurorack was on the upswing in terms of its mainstream popularity.  I had cracked the seal with a Bass Station ii and MS-20 mini earlier in the year and was looking to dip my toes into hte modular waters as a way of extending my functionality.  
+The previous year's speaker building emboldened me to spend even more money and tackle a new project.  This was probably c. 2018, when eurorack was on the upswing in terms of its mainstream popularity.  I had cracked the seal with a Bass Station ii and MS-20 mini earlier in the year and was looking to dip my toes into the modular waters as a way of extending my functionality.  
 
-I was shocked to see how expensive eurorack cases were.  There's a lot of analog fetishism around fit and finish in this world, especially amongst the boomer population who, having finally amassed enough wealth to indulge themselves in the gear lust of their youth, were now keen to build shrines to their fading youth, in memorium of days, past.
+I was shocked to see how expensive eurorack cases were.  There's a lot of analog fetishism around fit and finish in this world, especially amongst boomers  who, having finally amassed enough wealth to indulge themselves in the gear lust, are now keen to build shrines to their fading youth.
 
 Once more, I figured I could build something myself.
 
