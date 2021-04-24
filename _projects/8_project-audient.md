@@ -72,23 +72,23 @@ Considering this board sits in an unventilated metal enclosure that regularly re
 
 ## Capacitor life
 
-For the sake of argument, lets assume that the problem cap, CF2 --  [a 2000 hour part](https://store.comet.bg/en/Catalogue/Product/29481/) -- gets at least as hot as the heatsink: or 142F (61.1F).  This seems reasonable given it will be in a metal box, and closest to the heatsink.  Using [this calculator](https://eepower.com/tools/electrolytic-capacitor-life-calculator/#), and the following inputs:
+For the sake of argument, lets assume that the problem cap, CF2 --  [a 2000 hour part](https://store.comet.bg/en/Catalogue/Product/29481/) -- gets roughly as hot as the heatsink, say 140F (60C).  This seems reasonable given it will be in a metal box, and closest to the heatsink.  Using [this calculator](https://eepower.com/tools/electrolytic-capacitor-life-calculator/#), and the following inputs:
 
 * L1- Load Life Rating: 2000hrs
 * Vr - Max Volt. rating: 63V
 * Tm - Max temp. rating: 85C
-* Ta - Ambient temp: 61.1C
+* Ta - Ambient temp: 60C
 
-the calculated capacitor lifetime is about 21,000hrs.  This translates to the following lifetimes for various duty cycles (assumes daily use):
+the calculated capacitor lifetime is 22,627 hrs.  This translates to the following lifetimes for various duty cycles (assumes daily use):
 
-* 4hrs / day : 14.4 years
-* 8hrs / day : 7.2 years
-* 12hrs / day: 4.8 years
-* 24 hrs / day : 2.4 years
+* 4hrs / day : 15.5 years
+* 8hrs / day : 7.75 years
+* 12hrs / day: 5.2 years
+* 24 hrs / day : 2.6 years
 
-These last two are particularly troubling for home users.  Because the device is always on, it's not unreasonable to assume assume use cases where it's on 24/7 just from being directly plugged into an outlet, or 8-12hours a day if used at a workstation.  
+These last two are particularly troubling.  Because the device is always on, it's not unreasonable to assume use cases where it's on 24/7 just from being directly plugged into an outlet, or 8-12hours a day if used at a workstation.  
 
-Ambient temperature has the biggest effect on this computation. Lets be generous and assume things only get to 120F or approx. 49C.  That's only 48,503 hours.  With a 100% duty cycle (my unit was pretty much always plugged into the wall), thats 5.5 years.  
+Ambient temperature has the biggest effect on this computation. Lets be generous and assume the capacitor only get to 120F or approx. 49C.  That's only 48,503 hours.  With a 100% duty cycle (my unit was pretty much always plugged into the wall), thats 5.5 years.  
 
 {:refdef: style="text-align: center;"}
 ![id22](http://www.sci.utah.edu/~jimmy/website/audient/pikachu.png)
