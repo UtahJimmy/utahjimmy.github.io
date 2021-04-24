@@ -6,19 +6,30 @@ description: "Audient iD22 giving up the ghost?"
 {:refdef: style="text-align: center;"}
 ![id22](http://www.sci.utah.edu/~jimmy/website/audient/id22.png)
 {: refdef}
-I bought my Audient iD22, used, sometime back in 2016.  It was B-stock from a music store and it has been rock-solid in the ways that I've used it -- mostly as a DAC and monitor controller, plus the occasional line-level synthesizer recording.  
 
-However, I recently purchased an SM7b and cloudlifter.  The cloudlifter requires 48V phantom power, that, apparently, my interface cannot provide.
+I bought my Audient iD22 sometime back in 2016.  It was B-stock from a music store and has been rock-solid in the ways that I've used it. Mostly as a DAC and monitor controller, plus the occasional line-level synthesizer recording.  
 
-After some testing, the issue seems to be down to the output voltage.  It's low.  A Multimeter directly on the combo jacks measures 38VDC on a cold start, gradually creeping upwards to about 45VDC after 10-15 minutes, but no current flows. (measured according to [here](https://service.shure.com/s/article/how-to-test-phantom-power-voltage-and-current?language=en_US)).
+However, recent purchases have required the use of phantom power, which I have unforuntately discovered my interface cannot provide.
 
-[I'm not alone](https://gearspace.com/board/music-computers/1050068-audient-id22-issues-11.html).  This gearspace thread starts in 2015, with a good deal more activity into 2020 and 2021.  It seems crackle, and voltage problems are plaguing this unit.
+After some testing, the issue seems to be down to the output voltage.  It's low.  A multimeter directly on the combo jacks measures 38VDC on a cold start, gradually creeping upwards to about 45VDC after 10-15 minutes, but without any current. (measured according to [here](https://service.shure.com/s/article/how-to-test-phantom-power-voltage-and-current?language=en_US)).
+
+[I'm not alone](https://gearspace.com/board/music-computers/1050068-audient-id22-issues-11.html).  This gearspace thread starts in 2015, with a good deal more activity into 2020 and 2021.  It seems mine, and other problems, are starting to plague this unit.
 
 While these claims drew some comments from Audient ([Post No. 292](https://gearspace.com/board/showpost.php?p=15291215&postcount=292)) :
 
 > ...we have spent the last couple weeks collecting service data from all of our major markets across the world to get a deeper understanding of the situation (hence the delay in responding here). After much consideration, the data we have collected and further analysed is not reflective of some of the comments that have been indicated here. However, we very much appreciate each and every customer and do not take any of the issues you have experienced lightly.
 
-I highly doubt this is as uncommon as they'd have us believe. After taking a look inside, I see a few failure modes from some design choices.  Specifically the use of some C-tier capacitors (Fujicon, Jamicon, and ...LH. Nova?). There is also a [known-problematic Capacitor](https://www.youtube.com/watch?v=pRiQl7Vy4R8), CF2, which is *right next to a heatsink* and only rated at 85C.
+I highly doubt this is as uncommon as they'd have us believe. After taking a look inside, I see a few failure modes from some design choices.  
+
+{:refdef: style="text-align: center;"}
+![id22](http://www.sci.utah.edu/~jimmy/website/audient/insides.jpg)
+{: refdef}
+
+Specifically the use of some C-tier capacitors (Fujicon, Jamicon, and ...LH. Nova?). There is also a [known-problematic Capacitor](https://www.youtube.com/watch?v=pRiQl7Vy4R8), CF2, which is *right next to a heatsink* and only rated at 85C.
+
+{:refdef: style="text-align: center;"}
+![id22](http://www.sci.utah.edu/~jimmy/website/audient/badcap.jpg)
+{: refdef}
 
 Replacing this specific cap has solved some issues for people with pops/crackle in the audio, but the *reason* for this failure is likely due to a shortned lifespan from overheating. 
 
