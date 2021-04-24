@@ -39,22 +39,26 @@ Why?  Khron has a very nice teardown and electronic exploration on his blogpost 
 ![id22](http://www.sci.utah.edu/~jimmy/website/audient/chip.jpg)
 {: refdef}
 
-I haven't deconstructed my own as far, but a quick thermal measurement found the heatsink getting to 142F (60.3C)
-
-The [LT3439 datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/3439fs.pdf) gives operational ranges up to 125C, but a footnote (pg.2) guarntees performance specifications only up to a junction temperature of 70C (158F).  
-{:refdef: style="text-align: center;"}
-![id22](http://www.sci.utah.edu/~jimmy/website/audient/datasheet.png)
-{: refdef}
-
-My temperature measurement was taken in a chilly apartment, outside of the enclosure, and already hitting 141F+.  
+I haven't deconstructed my own as far, but a quick thermal measurement found the heatsink getting to 142.1F (61.2C)
 
 {:refdef: style="text-align: center;"}
 ![id22](http://www.sci.utah.edu/~jimmy/website/audient/temp.jpg)
 {: refdef}
 
-Given that this board sits in a sturdy metal enclosure, with no ventilation, and often receiving afternoon sun on its black face...it can't be good to be hitting so close to the margins.  Did I mention that the 2.2uF capacitor sitting right next to this heatsink is [a 2000 hour part](https://store.comet.bg/en/Catalogue/Product/29481/)?  No wonder people's units are failing more frequently after ~4-6 years.  And also fortunate that Audient is only extending their warranty to 3 years.  Still right before the caps would dry out.
+The [LT3439 datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/3439fs.pdf) gives operational ranges up to 125C, but a footnote (pg.2) guarantees performance specifications only up to a junction temperature of 70C (158F).  
+
+{:refdef: style="text-align: center;"}
+![id22](http://www.sci.utah.edu/~jimmy/website/audient/datasheet.png)
+{: refdef}
 
 
-I wonder whether it would be worthwhile to go through and re-cap the entire device.  There's about [80 electrolytic caps](https://docs.google.com/spreadsheets/d/1ARY4sbc7E2XFgQhkSMwCjVR8KNS4MbVoTxi-IBfXW9o/edit?usp=sharing) on the device.
+Hitting 60C+ is bad enough, but considering the measurement was taken in a chilly apartment (68F) and outside of the enclosure...it cannot be good to be this close to the margins, and in such ideal measurment conditions.  Given that this board sits in a sturdy metal enclosure, often receiving afternoon sun on its black face, and without any ventilation, I can only assume the junction temperature is well into the "statistical process" territory.  
 
+Because the 2.2uF capacitor sitting right next to this heatsink is [a 2000 hour part](https://store.comet.bg/en/Catalogue/Product/29481/), it is no wonder people's units are failing more frequently after ~4-6 years.  Audient's warranty extension to 3 years will do nothing to fix this. This is still conveniently right before that cap would dry out.
+
+
+I wonder whether it would be worthwhile to go through and re-cap the entire unit.  There's about [80 electrolytic caps](https://docs.google.com/spreadsheets/d/1ARY4sbc7E2XFgQhkSMwCjVR8KNS4MbVoTxi-IBfXW9o/edit?usp=sharing) on the device, and I might get around to it if I feel the need to procrastinate on my dissertation.
+
+
+More to come as the story develops....
 
