@@ -3,13 +3,21 @@ layout: post
 title: "Phantom Power"
 description: "Audient iD22 giving up the ghost?"
 ---
+
+
+## The Audient iD22 audio interface
+
+
 {:refdef: style="text-align: center;"}
 ![id22](http://www.sci.utah.edu/~jimmy/website/audient/id22.png)
 {: refdef}
 
+
 I bought my Audient iD22 sometime back in 2016.  It was B-stock from a music store and has been rock-solid in the ways that I've used it. Mostly as a DAC and monitor controller, plus the occasional line-level synthesizer recording.  
 
 However, recent purchases have required the use of phantom power, which I have unforuntately discovered my interface cannot provide.
+
+## Phantom power, giving up the ghost
 
 After some testing, the issue seems to be down to the output voltage.  It's low.  A multimeter directly on the combo jacks measures 38VDC on a cold start, gradually creeping upwards to about 45VDC after 10-15 minutes, but without any current. (measured according to [here](https://service.shure.com/s/article/how-to-test-phantom-power-voltage-and-current?language=en_US)).
 
@@ -21,6 +29,9 @@ While these claims drew some comments from Audient ([Post No. 292](https://gears
 
 I highly doubt this is as uncommon as they'd have us believe. After taking a look inside, I see a few failure modes from some design choices.  
 
+
+## What lies beneath
+
 {:refdef: style="text-align: center;"}
 ![id22](http://www.sci.utah.edu/~jimmy/website/audient/insides.jpg)
 {: refdef}
@@ -31,6 +42,7 @@ Specifically the use of some C-tier capacitors (Fujicon, Jamicon, and ...LH. Nov
 ![id22](http://www.sci.utah.edu/~jimmy/website/audient/badcap.jpg)
 {: refdef}
 
+## Too hot to handle
 Replacing this specific cap has solved some issues for people with pops/crackle in the audio, but the *reason* for this failure is likely due to a shortned lifespan from overheating. 
 
 Why?  Khron has a very nice teardown and electronic exploration on his blogpost ([Audient iD22 Teardown](https://khronscave.blogspot.com/2021/02/66-audient-id22-teardown.html?m=1), and [the repair](https://khronscave.blogspot.com/2021/02/67-audient-id22-part-2-repair.html?m=1)).  His unit had an entirely dead analog section, with a detached heatsink.  Turns out the overall thermal management on his Audient seemed.... pretty inadequate!  Besides being undersized, the heatsink looked to be merely wedged/glued in place from the silastic, and the [LT3949](https://www.analog.com/media/en/technical-documentation/data-sheets/3439fs.pdf) beneath wasn't even soldered to the ground plane!  
@@ -45,20 +57,63 @@ I haven't deconstructed my own as far, but a quick thermal measurement found the
 ![id22](http://www.sci.utah.edu/~jimmy/website/audient/temp.jpg)
 {: refdef}
 
+
+## Thermals 
+
 The [LT3439 datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/3439fs.pdf) gives operational ranges up to 125C, but a footnote (pg.2) guarantees performance specifications only up to a junction temperature of 70C (158F).  
 
 {:refdef: style="text-align: center;"}
 ![id22](http://www.sci.utah.edu/~jimmy/website/audient/datasheet.png)
 {: refdef}
 
+Hitting 60C+ is bad enough, but considering the measurement was taken in a chilly apartment (68F) and outside of the enclosure...it cannot be good to be this close to the margins, especially in such ideal measurment conditions.  
 
-Hitting 60C+ is bad enough, but considering the measurement was taken in a chilly apartment (68F) and outside of the enclosure...it cannot be good to be this close to the margins, and in such ideal measurment conditions.  Given that this board sits in a sturdy metal enclosure, often receiving afternoon sun on its black face, and without any ventilation, I can only assume the junction temperature is well into the "statistical process" territory.  
+Considering this board sits in an unventilated metal enclosure that regularly receives afternoon sun on its black face, I can only assume the junction temperature is well into the "statistical process" territory.  There's also the added 'always-on' design flaw for the iD22.  Without a power switch, the unit will draw power, dissapate heat, and slowly cook itself to death.
 
-Because the 2.2uF capacitor sitting right next to this heatsink is [a 2000 hour part](https://store.comet.bg/en/Catalogue/Product/29481/), it is no wonder people's units are failing more frequently after ~4-6 years.  Audient's warranty extension to 3 years will do nothing to fix this. This is still conveniently right before that cap would dry out.
+## Capacitor life
+
+For the sake of argument, lets assume that the problem cap, CF2 --  [a 2000 hour part](https://store.comet.bg/en/Catalogue/Product/29481/) -- gets at least as hot as the heatsink: or 142F (61.1F).  This seems reasonable given it will be in a metal box, and closest to the heatsink.  Using [this calculator](https://eepower.com/tools/electrolytic-capacitor-life-calculator/#), and the following inputs:
+
+* L1- Load Life Rating: 2000hrs
+* Vr - Max Volt. rating: 63V
+* Tm - Max temp. rating: 85C
+* Ta - Ambient temp: 61.1C
+
+the calculated capacitor lifetime is about 21,000hrs.  This translates to the following lifetimes for various duty cycles (assumes daily use):
+
+* 4hrs / day : 14.4 years
+* 8hrs / day : 7.2 years
+* 12hrs / day: 4.8 years
+* 24 hrs / day : 2.4 years
+
+These last two are particularly troubling for home users.  Because the device is always on, it's not unreasonable to assume assume use cases where it's on 24/7 just from being directly plugged into an outlet, or 8-12hours a day if used at a workstation.  
+
+Ambient temperature has the biggest effect on this computation. Lets be generous and assume things only get to 120F or approx. 49C.  That's only 48,503 hours.  With a 100% duty cycle (my unit was pretty much always plugged into the wall), thats 5.5 years.  
+
+{:refdef: style="text-align: center;"}
+![id22](http://www.sci.utah.edu/~jimmy/website/audient/pikachu.png)
+{: refdef}
+
+## Other caps and lifetimes
+
+Other capacitors on the analog board include:
+
+* 220uF, 25V at 105C (qty. 4)
+* 100uF, 25V at 85C (qty. 16)
+* 10uF, 16V at 105C (qty. 28)
+* 47uF, 63V at 105C (qty. 3)
+
+Four of the 100uF 85C caps are not that much further away from the heat sink, on the other side, making them susceptible as well.  Why not make all these caps 105C rated?  And why aren't they nichicon or rubycon?  I would have hoped such a prosumer device would have better quality parts.
 
 
-I wonder whether it would be worthwhile to go through and re-cap the entire unit.  There's about [80 electrolytic caps](https://docs.google.com/spreadsheets/d/1ARY4sbc7E2XFgQhkSMwCjVR8KNS4MbVoTxi-IBfXW9o/edit?usp=sharing) on the device, and I might get around to it if I feel the need to procrastinate on my dissertation.
+## Conclusion
+
+Given the thermal measurements and always-on design, it is no wonder people's units are failing after ~4-6 years.  Audient *has* extended their warranty from 1 to 3 years, but this move will do nothing to fix this problem.
+
+There's about [80 electrolytic caps](https://docs.google.com/spreadsheets/d/1ARY4sbc7E2XFgQhkSMwCjVR8KNS4MbVoTxi-IBfXW9o/edit?usp=sharing) on the device, and I wonder whether it would be worthwhile to go through and re-cap the entire unit.  The 85C caps, at the very least.   I might get around to it if I feel the need to procrastinate on my work.
 
 
-More to come as the story develops....
+## Updates?
+
+More to come as the story develops.
 
