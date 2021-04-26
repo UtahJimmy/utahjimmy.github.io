@@ -113,7 +113,11 @@ Given the thermal measurements and always-on design, it is no wonder people's un
 There's about [80 electrolytic caps](https://docs.google.com/spreadsheets/d/1ARY4sbc7E2XFgQhkSMwCjVR8KNS4MbVoTxi-IBfXW9o/edit?usp=sharing) on the device, and I wonder whether it would be worthwhile to go through and re-cap the entire unit.  The 85C caps, at the very least.   I might get around to it if I feel the need to procrastinate on my work.
 
 
-## Updates?
+## Low voltages?
 
-More to come as the story develops.
+Absent any schematics, I've tried probing around to see where certain voltages are coming from.  
+{:refdef: style="text-align: center;"}
+![voltages](http://www.sci.utah.edu/~jimmy/website/audient/voltages.png)
+{: refdef}
 
+I'd be curious if anyone with a working iD22 has similar readings.  I have a nagging suspicion that these are low, which could point to an ailing LT3439.  This is as far as I think I can get on my own.
