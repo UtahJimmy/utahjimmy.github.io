@@ -86,9 +86,9 @@ the calculated capacitor lifetime is 22,627 hrs.  This translates to the followi
 * 12hrs / day: 5.2 years
 * 24 hrs / day : 2.6 years
 
-These last two are particularly troubling.  Because the device is always on, it's not unreasonable to assume use cases where it's on 24/7 just from being directly plugged into an outlet, or 8-12hours a day if used at a workstation.  
+These last two are particularly troubling.  Because the device is always on, it's not unreasonable to assume use cases where it's on 24/7 just from being directly plugged into an outlet, or 8-12 hours a day if used at a workstation.  
 
-Ambient temperature has the biggest effect on this computation. Lets be generous and assume the capacitor only get to 120F or approx. 49C.  That's only 48,503 hours.  With a 100% duty cycle (my unit was pretty much always plugged into the wall), thats 5.5 years.  
+Ambient temperature has the biggest effect on this computation. Lets be generous and assume the capacitor only gets to 120F, or approximately 49C.  That's a 48,503 hour lifetime.  With a 100% duty cycle (my unit was pretty much always plugged into the wall), thats 5.5 years.  
 
 {:refdef: style="text-align: center;"}
 ![id22](http://www.sci.utah.edu/~jimmy/website/audient/pikachu.png)
@@ -113,7 +113,7 @@ Given the thermal measurements and always-on design, it is no wonder people's un
 There's about [80 electrolytic caps](https://docs.google.com/spreadsheets/d/1ARY4sbc7E2XFgQhkSMwCjVR8KNS4MbVoTxi-IBfXW9o/edit?usp=sharing) on the device, and I wonder whether it would be worthwhile to go through and re-cap the entire unit.  The 85C caps, at the very least.   I might get around to it if I feel the need to procrastinate on my work.
 
 
-## Low voltages?
+## Update: April 25, 2021 -- Low voltages?
 
 Absent any schematics, I've tried probing around to see where certain voltages are coming from.  
 {:refdef: style="text-align: center;"}
