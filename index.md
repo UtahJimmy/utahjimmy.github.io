@@ -13,6 +13,6 @@ I consider myself a hybrid qualitative researcher with a quantitative background
 
 Outside of school, I am interested music, electronics, and music electronics.  I have a small synth collection and eurorack habit, with the bank statements to prove it.
 
-Want to collaborate?  Drop me a message --  jimmy@cs.utah.edu
+Want to collaborate?  Drop me a message -- <a href="mailto:jimmy@cs.utah.edu">jimmy@cs.utah.edu</a>
 
 
