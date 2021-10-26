@@ -7,7 +7,7 @@ profile:
 published: true
 ---
 
-<p style="color:white">Yes, it's true...I'm on the market!  Email me at  <a href="mailto:jimmy@cs.utah.edu">jimmy@cs.utah.edu</a>  if you want to chat!  </p>
+<p style="color:white">Yes, it's true...I'm on the market!  Email me at jimmy@cs.utah.edu if you want to chat!  </p>
 
 I am a PhD student in the [Visualization Design Lab](https://vdl.sci.utah.edu/) and work with [Miriah Meyer](https://www.cs.utah.edu/~miriah/) and [Jason Wiese](https://www.cs.utah.edu/~wiese/).  I study how people work with personal data, and ways to make that process more productive and engaging.  
 
