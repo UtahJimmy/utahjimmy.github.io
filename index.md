@@ -13,7 +13,7 @@ I am a PhD student in the [Visualization Design Lab](https://vdl.sci.utah.edu/) 
 
 I consider myself a hybrid qualitative researcher with a quantitative background, and have developed visualization tools for [asthmatics](https://vdl.sci.utah.edu/publications/2018_imwut_maav/), [high school students](https://utahjimmy.github.io/AQ-U_Explorer/), and [actual rocket scientists](https://vdl.sci.utah.edu/publications/2021_aas_porter/). 
 
-Outside of school, I am interested music, electronics, and music electronics.  I have a small synth collection and eurorack habit, with the bank statements to prove it.
+Outside of school, I am interested music and electronics.  I have a small eurorack synth habit with the bank statements to prove it.
 
 Want to collaborate?  Drop me a message -- <a href="mailto:jimmy@cs.utah.edu">jimmy@cs.utah.edu</a>
 
